@@ -21,12 +21,12 @@ services:
 
       # 5.x 버전부터 변경된 보안 설정 네이밍 (dbms -> server)
       - NEO4J_server_security_procedures_unrestricted=apoc.*
-      # - NEO4J_server_security_procedures_allowlist=apoc.*
+      - NEO4J_server_security_procedures_allowlist=apoc.*
 
       # APOC에서 로컬 파일 읽기/쓰기를 허용하고 싶을 때 추가
       - NEO4J_apoc_export_file_enabled=true
       - NEO4J_apoc_import_file_enabled=true
-    restart: always
+    restart: unless-stopped
 
 volumes:
   neo4j_data:
