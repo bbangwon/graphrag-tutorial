@@ -341,6 +341,7 @@ dependencies = [
     { name = "langchain-neo4j" },
     { name = "langchain-openai" },
     { name = "neo4j" },
+    { name = "neo4j-graphrag" },
     { name = "python-dotenv" },
 ]
 
@@ -352,6 +353,7 @@ requires-dist = [
     { name = "langchain-neo4j", specifier = ">=0.9.0" },
     { name = "langchain-openai", specifier = ">=1.2.1" },
     { name = "neo4j", specifier = ">=6.1.0" },
+    { name = "neo4j-graphrag", specifier = ">=1.15.0" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
 ]
 
